@@ -1,0 +1,30 @@
+@import 'tailwindcss';
+
+@theme {
+  --animate-blink-red: blink-red 1s ease-in-out infinite;
+}
+
+@keyframes blink-red {
+  0%,
+  100% {
+    background-color: #ef4444;
+    box-shadow: 0 0 12px rgba(239, 68, 68, 0.8);
+  }
+  50% {
+    background-color: #b91c1c;
+    box-shadow: 0 0 4px rgba(239, 68, 68, 0.4);
+  }
+}
+
+html,
+body,
+#root {
+  min-height: 100dvh;
+}
+
+body {
+  margin: 0;
+  background: #f0fdf4;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}

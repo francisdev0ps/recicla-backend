@@ -1,0 +1,11 @@
+{
+  "name": "deviathon",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -k -n backend,frontend -c green,cyan \"venv\\\\Scripts\\\\python.exe -m uvicorn main:app --reload --host 0.0.0.0 --port 8000\" \"npm run dev --prefix recicla-frontend\"",
+    "start": "npm run dev"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
